@@ -119,7 +119,8 @@ Kaushik R, Re S (2026). ProtARG: Alignment-Free Prediction of Antimicrobial Resi
 
 License: Apache 2.0
 
-Contact
+Contact:
+
 Dr Rahul Kaushik,
 
 AI Center for Health and Biomedical Research,
