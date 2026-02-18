@@ -5,27 +5,20 @@ ProtARG: Alignment-Free Prediction of Antimicrobial Resistance from Protein Sequ
                 ProtARG addresses this limitation by combining biochemical feature engineering with transformer-based protein embeddings to enable scalable, database-independent AMR prediction. 
                 The framework is modular, reproducible, and designed for large-scale AMR surveillance and discovery applications.
 Three feature spaces were evaluated: 
-                Classical sequence-derived descriptors
-                Deep embeddings from pretrained ESM models
-                Integrated feature representation (classical + deep)
+                Classical sequence-derived descriptors.
+                Deep embeddings from pretrained ESM models.
+                Integrated feature representation (classical + deep).
                 
-2. Model Training
-       Multiple machine learning classifiers were evaluated:
-                Logistic Regression
-                Support Vector Machines
-                Random Forest
-                Neural Network (Multi-Layer Perceptron)
-      Three training configurations were tested:
-                Classical-only
-                Deep embeddings-only
-                Integrated feature space
-      Threshold optimization was performed using MCC maximization on the validation set.
+2. Model Training:
+     Multiple machine learning classifiers were evaluated: Logistic Regression, Support Vector Machines, Random Forest, Neural Network (Multi-Layer Perceptron).
+     Three training configurations were tested: Classical-only, Deep embeddings-only, Integrated feature space.
+     Threshold optimization was performed using MCC maximization on the validation set.
 
-3. Evaluation
-      Performance metrics: AUROC, Matthews Correlation Coefficient (MCC), F1-score
+4. Evaluation
+      Performance metrics: AUROC, Matthews Correlation Coefficient (MCC), F1-score. \n
       Final performance was reported on an independent held-out test dataset.
 
-4. Repository Structure
+5. Repository Structure
   ProtARG/
   │
   ├── All_Sequences.fasta
@@ -39,7 +32,7 @@ Three feature spaces were evaluated:
   │
   └── .gitattributes
 
-5. File Descriptions
+6. File Descriptions
      All_Sequences.fasta: Complete curated dataset of 6,086 non-redundant protein sequences used in this study.
 
      Features.tar.xz: Compressed archive containing Classical feature matrices, Deep embedding feature matrices, Integrated feature representations.
@@ -52,7 +45,7 @@ Three feature spaces were evaluated:
 
      ProtARG_Training.py : Full integrated training pipeline combining classical and deep features.
 
-6. Installation
+7. Installation
     6.1. Clone Repository
            git clone https://github.com/DrRahulKaushik/ProtARG.git
            cd ProtARG
